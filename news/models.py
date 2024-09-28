@@ -15,7 +15,7 @@ class Uploads(models.Model):
         ordering = ["-created_on"]
 
     def __str__(self):
-        return f"{self.title} | article from {self.author}"
+        return f"{self.title} | article by {self.author}"
 
     
 class Commenting(models.Model):
@@ -25,5 +25,8 @@ class Commenting(models.Model):
     created_on = models.DateTimeField(auto_now_add=True)
     authorised = models.BooleanField(default=False)
 
+    class Meta:
+        ordering = ["created_on"]
+
     def __str__(self):
-        return f"The title of this article is {self.title}"
+        return f"Comment {self.body} by {self.author}"
