@@ -8,3 +8,6 @@ class Uploads(models.Model):
     author = models.ForeignKey(User, on_delete=models.CASCADE, related_name="news_uploads")
     content = models.TextField()
     created_on = models.DateTimeField(auto_now_add=True)
+    updated_on = models.DateTimeField(auto_now=True)
+    excerpt = models.TextField(blank=True)
+    
