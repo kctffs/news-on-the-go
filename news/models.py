@@ -10,6 +10,13 @@ class Uploads(models.Model):
     created_on = models.DateTimeField(auto_now_add=True)
     updated_on = models.DateTimeField(auto_now=True)
     excerpt = models.TextField(blank=True)
+
+    class Meta:
+        ordering = ["-created_on"]
+
+    def __str__(self):
+        return f"{self.title} | article from {self.author}"
+
     
 class Commenting(models.Model):
     comment = models.ForeignKey(Uploads, on_delete=models.CASCADE, related_name="comments")
@@ -17,3 +24,6 @@ class Commenting(models.Model):
     body = models.TextField()
     created_on = models.DateTimeField(auto_now_add=True)
     authorised = models.BooleanField(default=False)
+
+    def __str__(self):
+        return f"The title of this article is {self.title}"
