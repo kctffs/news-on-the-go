@@ -9,11 +9,11 @@
 </head>
 
 <body>
-    <h1>Posts list</h1>
-    {% for post in object_list %}
-    <h2>{{post.title}}</h2>
-    <p>{{post.excerpt}}</p>
-    <p>Author: {{post.author}}</p>
+    <h1>Articles list</h1>
+    {% for uploads in object_list %}
+    <h2>{{uploads.title}}</h2>
+    <p>{{uploads.excerpt}}</p>
+    <p>Author: {{uploads.author}}</p>
     {% endfor %}
 </body>
 
