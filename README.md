@@ -24,15 +24,15 @@ News On The Go has a target of reaching all audiences interested in quick time n
   - Welcoming into the administration panel, there is a navigation bar that firstly greets the admin, confirming the identity allows the admin to view the website as a normal user, change password or log out.
     - <img width="418" alt="Django welcome" src="https://github.com/user-attachments/assets/f4c1ec08-0702-4f0b-a6fb-d7e678c24e6f">
   - Throughout the administration panel, it provides countless ways to manage the website which ensures a superuser to have full control over content on the site or provided.
-  - A secruity password reset is available when logged in as a user or admin with multiple requirements in place for extra protection, so you will have to think carefully when choosing.
+  - A security password reset is available when logged in as a user or admin with multiple requirements in place for extra protection, so you will have to think carefully when choosing.
     - <img width="884" alt="Password change" src="https://github.com/user-attachments/assets/21c12da5-6947-4bcc-8707-80cb492705f6">
   - There is a system in place to add a user when in the administration panel. This would offer multiple benefits as admin to be able to further control content being placed on the site and managing account access. With this feature you have the required restrictions to follow of 150 characters and symbols etc. It also comes in place with password restrictions which will refuse a password that is common, close to your username or details.
     - <img width="666" alt="Add user" src="https://github.com/user-attachments/assets/ceedb034-5946-4697-b1ea-0dce353e41a2">
   - User management is urgent when controlling a site as an admin therefore, News On The Go has a detailed process in place that makes easy power to control users. First of all there is a filtration system where you can specify to your needs the users you want to manage. There is options to delete users on command by selecting (can also be multiple at once) where it takes you to a confirmation screen showing your their interactions on the website whether that be posting on articles or writing them.
     - <img width="181" alt="User filtration" src="https://github.com/user-attachments/assets/139dbbda-36e5-4748-a866-de8689ad7cbc"> <img width="677" alt="User management" src="https://github.com/user-attachments/assets/d5cf4108-eb8f-49d3-911f-9e301bee7e66"> <img width="1158" alt="Deleting user" src="https://github.com/user-attachments/assets/1bb85f24-df18-4f9f-a6dd-87b1443a1821">
-  - An ability to see comments as admin is crucial and for News On The Go, it's no different. There is a viewing of all comments placed on the webiste no matter the article posted on with full access to delve deeper into that if needed.
+  - An ability to see comments as admin is crucial and for News On The Go, it's no different. There is a viewing of all comments placed on the website no matter the article posted on with full access to delve deeper into that if needed.
     - <img width="555" alt="Commenting" src="https://github.com/user-attachments/assets/43e9d3f0-7ee9-46dc-b7f6-f90a29c86716">
-  - Adding comments is also in place from the panel as a superuser as they're also involed with the articles. Commenting from the admin panel gives you the simpliest layout where choosing what post and what account you want to be able to converse with.
+  - Adding comments is also in place from the panel as a superuser as they're also involved with the articles. Commenting from the admin panel gives you the simplest layout where choosing what post and what account you want to be able to converse with.
     - <img width="848" alt="Add comments" src="https://github.com/user-attachments/assets/f98f3293-7a6c-4773-ac16-c8e02518a358">
   - As an admin, you can also view the actions that you haven been involved in as you can revisit your queries.
     - <img width="512" alt="Admin actions" src="https://github.com/user-attachments/assets/7d7b2e2d-90c1-42f9-9012-058085d1aab7">
@@ -46,7 +46,7 @@ News On The Go has a target of reaching all audiences interested in quick time n
     - <img width="710" alt="Commenting ERD" src="https://github.com/user-attachments/assets/c9c62f96-8460-44fb-9bc5-601a19ceb5b8">
 
 - ### Projects.
-  - Creating a project board full of user stories so the outlook of this project has critical critera needed to achieve the final steps to make the website professional.
+  - Creating a project board full of user stories so the outlook of this project has critical criteria needed to achieve the final steps to make the website professional.
     - <img width="1279" alt="User story" src="https://github.com/user-attachments/assets/273b1d00-414e-4a7a-b9c6-c8dec2c3c81a">
   - Throughout the project, revisiting this page helped ensure the website was on the right track as it became routine to check and re-read the criteria needed for each segment listed in the to-do list.
   - Each user story followed the same structure as a template was created for this project which followed the regime of:
