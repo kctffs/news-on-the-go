@@ -17,7 +17,9 @@ News On The Go has a target of reaching all audiences interested in quick time n
 
 - ## Content.
   - The idea to make a news style project was from the assessment guide and the django learning module that was provided.
-  - Research into news websites was all first hand research by searching and interacting with big news sites such as; 
+  - Research into news websites was all first hand research by searching and interacting with big news sites such as;
+    - [Reddit](https://www.reddit.com/) , [Sky News](https://news.sky.com/uk) and [BBC News](https://www.bbc.co.uk/news).
+  - For deployment within this project, [Heroku](https://heroku.com) was the method used.
 
 - ### Code.
   - The code in this project was inspired by the walkthrough project of the I Think Therefore I Blog project with all the django being taught was learned from there.
