@@ -3,5 +3,6 @@ from django.views import generic
 from .models import Uploads
 
 # Create your views here.
-class UploadsList(generic.ListView):
-    model = Uploads
+class PostList(generic.ListView):
+    queryset = Uploads.objects.all()
+    template_name = "news/article_list.html"
