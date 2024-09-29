@@ -4,5 +4,5 @@ from .models import Uploads
 
 # Create your views here.
 class PostList(generic.ListView):
-    queryset = Uploads.objects.filter(status=1)
+    queryset = Uploads.objects.all()
     template_name = "news/article_list.html"
