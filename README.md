@@ -34,6 +34,8 @@ News On The Go has a target of reaching all audiences interested in quick time n
     - <img width="555" alt="Commenting" src="https://github.com/user-attachments/assets/43e9d3f0-7ee9-46dc-b7f6-f90a29c86716">
   - Adding comments is also in place from the panel as a superuser as they're also involed with the articles. Commenting from the admin panel gives you the simpliest layout where choosing what post and what account you want to be able to converse with.
     - <img width="848" alt="Add comments" src="https://github.com/user-attachments/assets/f98f3293-7a6c-4773-ac16-c8e02518a358">
+  - As an admin, you can also view the actions that you haven been involved in as you can revisit your queries.
+    - <img width="512" alt="Admin actions" src="https://github.com/user-attachments/assets/7d7b2e2d-90c1-42f9-9012-058085d1aab7">
   - Django superuser credentials are here as provided: `Username: NewsOnTheGoAdmin` `Password: qwertyuiop` (if email is needed, it is `NewsOnTheGoAdmin@PP4.com`).
  
 - ### Entity Relationship Diagrams.
@@ -43,7 +45,16 @@ News On The Go has a target of reaching all audiences interested in quick time n
   - For the `Commenting` model, this is the created diagram:
     - <img width="710" alt="Commenting ERD" src="https://github.com/user-attachments/assets/c9c62f96-8460-44fb-9bc5-601a19ceb5b8">
 
-
+- ### Projects.
+  - Creating a project board full of user stories so the outlook of this project has critical critera needed to achieve the final steps to make the website professional.
+    - <img width="1279" alt="User story" src="https://github.com/user-attachments/assets/273b1d00-414e-4a7a-b9c6-c8dec2c3c81a">
+  - Throughout the project, revisiting this page helped ensure the website was on the right track as it became routine to check and re-read the criteria needed for each segment listed in the to-do list.
+  - Each user story followed the same structure as a template was created for this project which followed the regime of:
+     As a **role** I can **capability** so that **received benefit**
+      - Acceptance criteria 1
+      - Acceptance criteria 2
+      - Acceptance criteria 3
+    
 
 ## Testing.
 
