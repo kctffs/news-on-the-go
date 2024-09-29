@@ -17,9 +17,23 @@ News On The Go has a target of reaching all audiences interested in quick time n
   - Colouring chose for the website ensures a clear reading as it pairs with the structured layout to provide comfortable viewing for the viewer when accessing the page.
  
 - ## Django Administration.
+  - First of all, to access this setting you have to append `/admin` at the end of the URL address, which will then provide you with a log in screen (log in credentials are at the bottom of this topic)
+    - <img width="479" alt="Ammend admin" src="https://github.com/user-attachments/assets/bc9bfef6-c62c-40a6-ad4b-b6f2e0725378">
   - Django administration panel was used in this project for superusers to be able to edit articles, create various users, make comments and manage posts.
   - Throughout the administration panel, it provides countless ways to manage the website which ensures a superuser to have full control over content on the site or provided.
-  - Django superuser details are here as provided: `Username: NewsOnTheGoAdmin` `Password: qwertyuiop` (if email is needed, it is `NewsOnTheGoAdmin@PP4.com`).
+  - A secruity password reset is available when logged in as a user or admin with multiple requirements in place for extra protection, so you will have to think carefully when choosing.
+    - <img width="884" alt="Password change" src="https://github.com/user-attachments/assets/21c12da5-6947-4bcc-8707-80cb492705f6">
+
+  - Django superuser credentials are here as provided: `Username: NewsOnTheGoAdmin` `Password: qwertyuiop` (if email is needed, it is `NewsOnTheGoAdmin@PP4.com`).
+ 
+- ## Entity Relationship Diagrams.
+  - For the models created in this project, I planned them in advance by creating two diagrams to showcase how the models will work in comparison to the code.
+  - For the `Uploads` model, this is the created diagram:
+    - <img width="730" alt="Uploads ERD" src="https://github.com/user-attachments/assets/d8c5aec1-4a12-4863-860f-d411b8c41c7e">
+  - For the `Commenting` model, this is the created diagram:
+    - <img width="710" alt="Commenting ERD" src="https://github.com/user-attachments/assets/c9c62f96-8460-44fb-9bc5-601a19ceb5b8">
+
+
 
 ## Testing.
 
@@ -33,6 +47,6 @@ News On The Go has a target of reaching all audiences interested in quick time n
   - For deployment within this project, [Heroku](https://heroku.com) was the method used.
 
 - ### Code.
-  - The code in this project was inspired by the walkthrough project of the I Think Therefore I Blog project with all the Django being taught was learned from there.
+  - The code in this project was inspired by the walkthrough project of the **I Think Therefore I Blog** project with all the Django being taught was learned from there.
   - Snippets of code throughout the project are also inspired from this project as it was needed to either install, import, or create paths throughout the various apps in the project.
   - Finally, the models in my project are inspired by the walkthrough project however, I have altered them to become unique and fit my own project.
