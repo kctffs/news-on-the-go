@@ -1,3 +1,5 @@
+{% load static %}
+
 {% url 'home' as home_url %}
 
 <!DOCTYPE html>
@@ -18,16 +20,18 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
 
 </head>
 
 <body class="d-flex flex-column h-100 main-bg">
 
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-white">
+    <nav class="navbar navbar-expand-lg navbar-light bg-navy">
         <div class="container-fluid">
-            <a class="navbar-brand" href="{% url 'home' %}"><span class="brand">N<span class="red-o">E</span>WS<span
-                        class="thin">|On The Go</span></span></a>
+            <a class="navbar-brand" href="{% url 'home' %}"><span class="brand">NE</span>WS <span
+                        class="bold"> → ON THE GO</span></span></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
                 aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -41,7 +45,7 @@
 
                 </ul>
                 <span class="navbar-text text-muted">
-                    infuse with quick news
+                    INFUSE with some quick NEWS
                 </span>
             </div>
         </div>
@@ -57,7 +61,7 @@
 
     <!-- Footer -->
     <footer class="footer mt-auto py-3 dark-bg">
-        <p class="m-0 text-center text-white">Made by News On The Go</p>
+        <p class="m-0 text-center text-white">{% block copyright %} Made by News On The Go {% endblock copyright %}</p>
         <p class="m-0 text-center text-white">Find us here: <i class="fab fa-facebook-square ms-3"></i>
             <i class="fab fa-twitter-square ms-3"></i>
             <i class="fab fa-instagram-square ms-3"></i>
