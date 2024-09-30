@@ -3,7 +3,7 @@ Throughout this project I have struggled immensely to figure out the use of Djan
 
 I have contacted student support multiple times with no responses for help and even called to be told all agents are busy and there is no one to take my call. I became under stressed from this project and did not manage to finalise it the way I wish to. Without having a lot of free time, all the Django learnt was from what the course provided and it was hard to understand how to implement it into a project that wasn't the walkthrough.
 
- Nevertheless, I will submit what I have and this README.md file will explain everything I have up until this point, it covers the premise of the project and it's ideas with the features it provides.
+Nevertheless, I will submit what I have and this README.md file will explain everything I have up until this point, it covers the premise of the project and it's ideas with the features it provides.
 
  Thank you.
  
@@ -22,6 +22,8 @@ News On The Go has a target of reaching all audiences interested in quick time n
   - When first looking at the website, it gives you immediate confirmation on the purpose it has. With the abrupt articles on your screen, clear organisability and colouring to match, **News On The Go** invites every reader for easy home screen navigation.
   - At the top of the page, the header is shown which displays the **News On The Go** title with a **Home** navigation button beside. (This button to be shown on all pages would of course revert the user back to the initial home screen). To The far right of the header is equipped with a slogan that reads **INFUSE with some quick NEWS** to provide a catchy read that is also the premise of the website (not to mention the viewer would glance at this slogan when visiting the site).
     - <img width="1428" alt="NOTG header" src="https://github.com/user-attachments/assets/74df56b6-ff3b-48c6-9221-bd60bb137559">
+  - Home screen offers multiple articles for you to be able to browse and choose pages of readings that you want to be involved in.
+    - <img width="1422" alt="home" src="https://github.com/user-attachments/assets/634e5a36-449e-4ab0-ad01-6aea19d4e7e5">
   - Colouring chose for the website ensures a clear reading as it pairs with the structured layout to provide comfortable viewing for the viewer when accessing the page.
  
 - ### Django Administration.
@@ -61,10 +63,21 @@ News On The Go has a target of reaching all audiences interested in quick time n
       - Acceptance criteria 1
       - Acceptance criteria 2
       - Acceptance criteria 3
-    
-
+   
 ## Testing.
 
+- ## Validation.
+  - First of all I validated all pyhton code in the project by using the required PEP8 validated from [Code Institute](https://pep8ci.herokuapp.com/#). I did have some minor errors however these were quickly altered to be corrected so that it passed.
+  - <img width="1288" alt="PEP8 Fail" src="https://github.com/user-attachments/assets/66c05010-ec38-4e02-9d29-c9adad234822"> <img width="1279" alt="User story" src="https://github.com/user-attachments/assets/662d0536-5cf0-49ac-9c3d-4e518255f5df">
+- Html validation was checked through the [W3C Markup Validator](https://validator.w3.org/) providing errors from the html code templates used in the walkthrough. The errors thrown were not to do with the html rather the code using the `{ }` features for example `{% block content %}` and `{% endblock content %}`.
+  - <img width="951" alt="HTML error" src="https://github.com/user-attachments/assets/269f756a-c8bb-43f0-8523-525ab50e6ab6">
+- CSS validation was put through [W3C CSS Validator](https://jigsaw.w3.org/css-validator/validator) and passed.
+  - <img width="688" alt="CSS pass" src="https://github.com/user-attachments/assets/6ef662b5-6e23-463a-b93d-25d984a209a3">
+
+## Deployment.
+
+- ## Heroku.
+  - The link to the Heroku deployment is here: https://news-on-the-go-0143dfa7e624.herokuapp.com/
 ## Credits.
 
 - ### Content.
@@ -77,4 +90,5 @@ News On The Go has a target of reaching all audiences interested in quick time n
 - ### Code.
   - The code in this project was inspired by the walkthrough project of the **I Think Therefore I Blog** project with all the Django being taught was learned from there.
   - Snippets of code throughout the project are also inspired from this project as it was needed to either install, import, or create paths throughout the various apps in the project.
+  - The templates used in this project for `index.html` and `base.html` were inspired by the walkthrough project but changed to fit News On The Go, there was more altering to be achieved however, I did not manage to fully develop the templates the way I wanted
   - Finally, the models in my project are inspired by the walkthrough project however, I have altered them to become unique and fit my own project.
