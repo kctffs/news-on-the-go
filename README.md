@@ -1,5 +1,12 @@
 ## Disclaimer
+Throughout this project I have struggled immensely to figure out the use of Django and how to incorporate it into my code. I had created various projects that always ended in a stalemate. I found myself repeatedly going back to the walkthrough project as this is all the Django I have learnt and walking through with the steps on my own project.
 
+I have contacted student support multiple times with no responses for help and even called to be told all agents are busy and there is no one to take my call. I became under stressed from this project and did not manage to finalise it the way I wish to. Without having a lot of free time, all the Django learnt was from what the course provided and it was hard to understand how to implement it into a project that wasn't the walkthrough.
+
+ Nevertheless, I will submit what I have and this README.md file will explain everything I have up until this point, it covers the premise of the project and it's ideas with the features it provides.
+
+ Thank you.
+ 
 ..
 
 
