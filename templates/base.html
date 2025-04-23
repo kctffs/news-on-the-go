@@ -52,11 +52,26 @@
     </nav>
 
     <main class="flex-shrink-0 main-bg">
-
         {% block content %}
-        <!-- Content Goes here -->
+        <div class="container mt-4">
+            <h1 class="text-center">Latest News</h1>
+            <div class="row">
+                {% for upload in uploads %}
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h5 class="card-title">{{ upload.title }}</h5>
+                            <p class="card-text">{{ upload.excerpt }}</p>
+                            <a href="{% url 'detail' upload.slug %}" class="btn btn-primary">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                {% empty %}
+                <p class="text-center">No news available at the moment.</p>
+                {% endfor %}
+            </div>
+        </div>
         {% endblock content %}
-
     </main>
 
     <!-- Footer -->

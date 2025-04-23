@@ -13,6 +13,7 @@ https://docs.djangoproject.com/en/4.2/ref/settings/
 from pathlib import Path
 import os
 import dj_database_url
+from django.core.exceptions import ImproperlyConfigured
 if os.path.isfile('env.py'):
     import env
 
@@ -24,13 +25,18 @@ TEMPLATES_DIR = os.path.join(BASE_DIR, 'templates')
 # See https://docs.djangoproject.com/en/4.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = SECRET_KEY = os.environ.get("SECRET_KEY")
+SECRET_KEY = os.environ.get("SECRET_KEY", "your-default-secret-key-for-dev")
+
+if not SECRET_KEY:
+    raise ImproperlyConfigured("The SECRET_KEY environment variable is not set or is empty.")
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['8000-kctffs-newsonthego-rrk90b3a82c.ws-eu116.gitpod.io',
-                '.herokuapp.com']
+                '.herokuapp.com',
+                '127.0.0.1',
+]
 
 
 # Application definition
@@ -80,17 +86,30 @@ WSGI_APPLICATION = 'newsonthego.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
-#DATABASES = {
-#    'default': {
-#        'ENGINE': 'django.db.backends.sqlite3',
-#        'NAME': BASE_DIR / 'db.sqlite3',
-#    }
-#}
+DATABASE_URL = os.environ.get("DATABASE_URL")
 
+# Enhanced debugging: Print the type and value of DATABASE_URL
+print("DATABASE_URL type:", type(DATABASE_URL))
+print("DATABASE_URL value:", repr(DATABASE_URL))  # Use repr to show special characters or None explicitly
 
-DATABASES = {
-    'default': dj_database_url.parse(os.environ.get("DATABASE_URL"))
-}
+if DATABASE_URL:
+    try:
+        DATABASES = {
+            'default': dj_database_url.parse(DATABASE_URL)
+        }
+        print("Successfully parsed DATABASE_URL.")
+    except Exception as e:
+        print("Error parsing DATABASE_URL:", e)
+        raise
+else:
+    # Fallback to SQLite for local development
+    print("DATABASE_URL not found. Using SQLite as fallback.")
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.sqlite3',
+            'NAME': BASE_DIR / 'db.sqlite3',
+        }
+    }
 
 
 CSRF_TRUSTED_ORIGINS = [
