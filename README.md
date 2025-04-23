@@ -77,7 +77,7 @@ News On The Go has a target of reaching all audiences interested in quick time n
 ## Deployment.
 
 - ## Heroku.
-  - The link to the Heroku deployment is here: https://news-on-the-go-0143dfa7e624.herokuapp.com/
+  - The link to the Heroku deployment is here: [https://news-on-the-go-0143dfa7e624.herokuapp.com/](https://news-on-the-go-0143dfa7e624.herokuapp.com/)
 ## Credits.
 
 - ### Content.
