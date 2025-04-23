@@ -33,7 +33,7 @@ if not SECRET_KEY:
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['8000-kctffs-newsonthego-rrk90b3a82c.ws-eu116.gitpod.io',
+ALLOWED_HOSTS = ['8000-kctffs-newsonthego-no1i59joelj.ws-eu118.gitpod.io',
                 '.herokuapp.com',
                 '127.0.0.1',
 ]
